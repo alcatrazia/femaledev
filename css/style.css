@@ -87,7 +87,9 @@ div {
 	}
 
 	.profile {
+		top:50px;
 		margin: 30px;
+		height: 800px;
 	}
 
 	.title {
