@@ -1,0 +1,140 @@
+@font-face {
+  font-family: 'Respective';
+  src: url('../fonts/respective/Respective.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Respective-Italic';
+  src: url('../fonts/respective/Respective_Italic.ttf');
+  font-style: normal;
+}
+
+::selection {background: #652241; color: #fff}
+
+body {
+	background-color: #f5efee !important;
+	color: #675454 !important;
+	height: 100%;
+	width: 100%;
+	min-height: 2000px;
+}
+
+a {
+  color: #544545 !important;
+}
+a:hover, a:focus {
+  color: #652241 !important;
+}
+
+div {
+	display: block;
+}
+
+.center {
+	text-align: center !important;
+}
+
+.burgundy {color: #652241}
+.ash {color: #7a6667}
+.navy {color: #1f2035}
+
+/* WEB STYLE */
+
+
+
+@media only screen and (min-width: 960px) {
+	.couple {
+		background: url(../images/1.jpg) #f5efee no-repeat !important;
+		width: 100%;
+		height: 650px;
+		background-size: 100% auto;
+		/*display:-webkit-box;
+	  	-webkit-box-orient:vertical;
+	  	-webkit-box-align:center;
+	  	-webkit-box-pack:center;*/
+	}
+
+	.banner {
+		background: #f5efee;
+		width: 200px;
+		height: 300px;
+		border-bottom-right-radius: 50px;
+		border-bottom-left-radius: 50px;
+		margin-right: 100px;
+		text-align: center !important;
+		font-family: 'Respective' !important;
+		line-height: 60px;
+		font-size: 50px;
+		padding-top: 30px;
+		padding-bottom: 30px;
+		-webkit-box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
+	}
+	.banner a {color: #652241 !important;}
+	.banner>i {font-size: 30px;}
+	.date {font-family: 'Lato-Light'; font-size: 18px; padding-top: 20px;}
+
+	.navigate {
+		position: fixed;
+		z-index: 9999;
+		margin-top: 250px;
+		font-size: 2.75rem;
+	}
+	.navigate ul {
+		list-style: none !important;
+	}
+
+	.profile {
+		margin: 30px;
+	}
+
+	.title {
+		font-family: 'Respective';
+		padding: 10px;
+	}
+
+	.box-profile {
+		border-radius: 10px;
+		border: 1px solid #000;
+		display: block;
+		margin: 30px;
+		padding: 20px;
+		width: 100%;
+		height: 100%;
+	}
+
+	.photo {
+		width: 100%;
+		height: 100%;
+	}
+
+	.photo img {
+		border-radius: 100px; 
+		width: 200px; 
+		height: 200px;
+		-webkit-box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
