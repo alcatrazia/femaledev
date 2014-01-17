@@ -10,6 +10,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Carton';
+  src: url('../fonts/Carton-Slab.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+
 ::selection {background: #652241; color: #fff}
 
 body {
@@ -133,6 +140,7 @@ div {
 	.date-title {
 		font-size: 10rem;
 		padding-top: 80px;
+		font-family: 'Carton';
 	}
 }
 
