@@ -52,7 +52,7 @@ div {
 
 @media only screen and (min-width: 960px) {
 	.couple {
-		background: url(../images/1.jpg) #f5efee no-repeat !important;
+		background: url(images/1.jpg) #f5efee no-repeat !important;
 		width: 100%;
 		height: 650px;
 		background-size: 100% auto;
