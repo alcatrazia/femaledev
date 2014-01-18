@@ -12,7 +12,7 @@
 
         <!-- Loading Flat UI -->
         <link href="css/style.css" rel="stylesheet">
-        <link href="css/pink.css" rel="stylesheet">
+        <link href="css/tipsy.css" rel="stylesheet">
         <link href="css/flat-ui.css" rel="stylesheet">
         <link rel="shortcut icon" href="images/favicon.ico">
 
@@ -23,11 +23,12 @@
     </head>
 
     <body data-spy="scroll" data-offset="0" data-target="#navs">
-        <div class="navigate">
+        <div class="navigate" id="gravity">
             <ul id="navs">
-                <li><a class="smoothScroll" href="#couple"><i class="fui-heart"></i></a></li>
-                <li><a class="smoothScroll" href="#profile"><i class="fui-heart"></i></a></li>
-                <li><a class="smoothScroll" href="#savethedate"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" id="couple" href="#couple" title="Home"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" id="profile" href="#profile" title="About Us"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" id="savethedate" href="#savethedate" title="Save The Date"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" id="rsvp" href="#rsvp" title="R.S.V.P"><i class="fui-heart"></i></a></li>
             </ul>
         </div>
         <div id="couple" class="couple">
@@ -37,7 +38,7 @@
                     <i class="fui-heart"></i>
                     <div>Bayu</div>
                 </a>
-                <div class="date">February, 7-8 2014</div>
+                <div class="date">February 7-8, 2014</div>
             </div>
 
         </div>
@@ -59,13 +60,57 @@
             </div>
 
         </div>
-
+        <div class="clearfix"></div>
         <div id="savethedate" class="savethedate">
             <h1 class="date-title center">Save The Date</h1>
+            <div class="col-md-3 align-right">
+                <h4>When/Where</h4>
+            </div>
+            <div class="col-md-3 align-justify">
+                <h6>Wedding Shower</h6>
+                <p class="schedule"><i class="fui-calendar-solid"></i> Friday, February 7, 2014</p>
+                <p class="schedule"><i class="fui-time"></i> 14.00 to 16.00</p>
+                <p><i class="fui-location"></i> East Helvetia 1</p>
+                <div class="center"><i class="fui-heart"></i></div>
+                <h6>Ceremony / Ijab Kabul</h6>
+                <p class="schedule"><i class="fui-calendar-solid"></i> Friday, February 7, 2014</p>
+                <p class="schedule"><i class="fui-time"></i> 20.00 to 21.00</p>
+                <p><i class="fui-location"></i> East Helvetia 1</p>
+                <div class="center"><i class="fui-heart"></i></div>
+                <h6>Wedding Reception</h6>
+                <p class="schedule"><i class="fui-calendar-solid"></i> Saturday, February 8, 2014</p>
+                <p class="schedule"><i class="fui-time"></i> 11.00 to 16.00</p>
+                <p><i class="fui-location"></i> East Helvetia 1</p>
+            </div>
+            <div class="col-md-5">
+                <p class="schedule">See the map below</p>
+                <iframe width='100%' height='580px' frameBorder='0' src='http://a.tiles.mapbox.com/v3/ocha.h1fl3igp/mm/zoompan,zoomwheel,geocoder,share.html#13/3.6043117795489046/98.6652946472168'></iframe>
+            </div>
+            <div class="clearfix"></div>
+            <div class="col-md-12">
+                <h3 class="title center">We are waiting for you to share our happiness!</h3>
+            </div>
         </div>
 
+        <div id="rsvp" class="rsvp">
+            <div class="col-md-6 align-right">
+                <h1 class="title">Responds s'il vous plait!</h1>
+            </div>
+        </div>
 
         <!-- JAVASCRIPT HERE -->
+
+        <script type="text/javascript">
+          $(function() {
+            $("#couple").tipsy({gravity: 'w'});
+            $("#profile").tipsy({gravity: 'w'});
+            $("#savethedate").tipsy({gravity: 'w'});
+            $("#rsvp").tipsy({gravity: 'w'});
+          });
+        </script>
+
+
+
         <script src="js/jquery-1.8.3.min.js"></script>
         <script src="js/jquery.min.js"></script>
         <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
@@ -79,5 +124,6 @@
         <script src="js/jquery.placeholder.js"></script>
 
         <script src="js/smoothscroll.js"></script> 
+        <script src="js/jquery.tipsy.js"></script> 
     </body>
 </html>

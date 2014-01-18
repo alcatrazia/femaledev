@@ -24,7 +24,6 @@ body {
 	color: #675454 !important;
 	height: 100%;
 	width: 100%;
-	min-height: 2000px;
 }
 
 a {
@@ -32,6 +31,9 @@ a {
 }
 a:hover, a:focus {
   color: #652241 !important;
+}
+p {
+	line-height: 1.6 !important;
 }
 
 div {
@@ -45,6 +47,11 @@ div {
 .burgundy {color: #652241}
 .ash {color: #7a6667}
 .navy {color: #1f2035}
+
+.align-right {text-align: right !important;}
+.align-left {text-align: left !important;}
+.align-center  {text-align: center !important;}
+.align-justify {text-align: justify !important;}
 
 /* WEB STYLE */
 
@@ -88,13 +95,14 @@ div {
 		z-index: 9999;
 		margin-top: 250px;
 		font-size: 2.75rem;
+		opacity: 0.6;
 	}
 	.navigate ul {
 		list-style: none !important;
 	}
 
 	.profile {
-		margin: 50px 70px 50px 70px;
+		margin-top: 70px;
 		height: 800px;
 	}
 
@@ -119,18 +127,29 @@ div {
 
 	.savethedate {
 		margin: 50px 0 50px 0;
-		height: 800px;
+		height: 1000px;
 		background-color: #401925;
-		color: #f5efee;
-		-webkit-box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
-		-moz-box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
-		box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
+		color: #e2d9d0;
+		-webkit-box-shadow: 0px 0px 90px -7px rgba(0,0,0,0.75);
+		-moz-box-shadow: 0px 0px 90px -7px rgba(0,0,0,0.75);
+		box-shadow: 0px 0px 90px -7px rgba(0,0,0,0.75);
 	}
 
 	.date-title {
 		font-size: 10rem;
 		padding-top: 80px;
 		font-family: 'Carton';
+		text-shadow: 0 0 10px #000;
+	}
+
+	.schedule {
+		font-family: 'Lato-Light';
+		font-style: italic;
+	}
+
+	.rsvp {
+		margin: 50px;
+		height: 600px;
 	}
 }
 
