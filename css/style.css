@@ -239,7 +239,7 @@ fieldset[disabled] .btn-inverse.active {
 		margin-right: 100px;
 		text-align: center !important;
 		font-family: 'Respective' !important;
-		line-height: 60px;
+		line-height: 50px;
 		font-size: 50px;
 		padding-top: 30px;
 		padding-bottom: 30px;
@@ -247,8 +247,8 @@ fieldset[disabled] .btn-inverse.active {
 		-moz-box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
 		box-shadow: 0px 0px 40px -7px rgba(0,0,0,0.75);
 	}
-	.banner a {color: #652241 !important;}
-	.banner>i {font-size: 30px;}
+	.banner a {color: #652241 !important; text-shadow: 1px 1px 10px #1f2035;}
+	
 	.date {font-family: 'Lato-Light'; font-size: 18px; padding-top: 20px;}
 
 	.navigate {
@@ -256,7 +256,6 @@ fieldset[disabled] .btn-inverse.active {
 		z-index: 9999;
 		margin-top: 250px;
 		font-size: 2.75rem;
-		opacity: 0.6;
 	}
 	.navigate ul {
 		list-style: none !important;
