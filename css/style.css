@@ -53,13 +53,113 @@ div {
 .align-center  {text-align: center !important;}
 .align-justify {text-align: justify !important;}
 
-/* WEB STYLE */
+/* BUTTONS */
+
+.btn-primary {
+  color: #f5efee !important;
+  background-color: #652241 !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  color: #40192e !important;
+  background-color: #f5efee !important;
+  border-color: #f5efee !important;
+}
+.btn-primary:active,
+.btn-primary.active,
+.open .dropdown-toggle.btn-primary {
+  background: #f5efee !important;
+}
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+  background-color: #f5efee !important;
+}
+
+.btn-inverse {
+  color: #652241 !important;
+  background-color: #f5efee !important;
+}
+.btn-inverse:focus,
+.btn-inverse:active,
+.btn-inverse.active,
+.open .dropdown-toggle.btn-inverse {
+  color: #40192e !important;
+  background-color: #f5efee !important;
+  border-color: #f5efee !important;
+}
+.btn-inverse:active,
+.btn-inverse.active,
+.open .dropdown-toggle.btn-inverse {
+  background: #f5efee !important;
+}
+.btn-inverse.disabled,
+.btn-inverse[disabled],
+fieldset[disabled] .btn-inverse,
+.btn-inverse.disabled:hover,
+.btn-inverse[disabled]:hover,
+fieldset[disabled] .btn-inverse:hover,
+.btn-inverse.disabled:focus,
+.btn-inverse[disabled]:focus,
+fieldset[disabled] .btn-inverse:focus,
+.btn-inverse.disabled:active,
+.btn-inverse[disabled]:active,
+fieldset[disabled] .btn-inverse:active,
+.btn-inverse.disabled.active,
+.btn-inverse[disabled].active,
+fieldset[disabled] .btn-inverse.active {
+  background-color: #f5efee !important;
+}
 
 
 
-@media only screen and (min-width: 960px) {
+
+.select .caret {
+	border-bottom-color: #652241 !important;
+	border-top-color: #652241 !important;
+}
+
+.form-control:-moz-placeholder {
+  color: #7a6667 !important;
+}
+.form-control::-moz-placeholder {
+  color: #7a6667 !important;
+}
+.form-control:-ms-input-placeholder {
+  color: #7a6667 !important;
+}
+.form-control::-webkit-input-placeholder {
+  color: #7a6667 !important;
+}
+.form-control.placeholder {
+  color: #7a6667 !important;
+}
+
+
+/* ============ WEB STYLE ============== */
+
+/*@media only screen and (min-width: 960px) {*/
 	.couple {
-		background: url(../images/1.jpg) #f5efee no-repeat !important;
+		background: url(../images/1.jpg) #f5efee no-repeat center center !important;
+		-webkit-background-size: cover;
+	 	-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
 		width: 100%;
 		height: 650px;
 		background-size: 100% auto;
@@ -103,7 +203,8 @@ div {
 
 	.profile {
 		margin-top: 70px;
-		height: 800px;
+		min-height: 800px;
+		height: 100%
 	}
 
 	.title {
@@ -127,7 +228,8 @@ div {
 
 	.savethedate {
 		margin: 50px 0 50px 0;
-		height: 1000px;
+		min-height: 1000px;
+		height: 100%;
 		background-color: #401925;
 		color: #e2d9d0;
 		-webkit-box-shadow: 0px 0px 90px -7px rgba(0,0,0,0.75);
@@ -149,9 +251,78 @@ div {
 
 	.rsvp {
 		margin: 50px;
-		height: 600px;
+		min-height: 600px;
+		height: 100%;
+		/* Internet Explorer 10 */
+		display:-ms-flexbox;
+		-ms-flex-pack:center;
+		-ms-flex-align:center;
+
+		/* Firefox */
+		display:-moz-box;
+		-moz-box-pack:center;
+		-moz-box-align:center;
+
+		/* Safari, Opera, and Chrome */
+		display:-webkit-box;
+		-webkit-box-pack:center;
+		-webkit-box-align:center;
+
+		/* W3C */
+		display:box;
+		box-pack:center;
+		box-align:center;
 	}
-}
+
+	.login-form {background: #7a6667 !important}
+	.login-form:before {
+		border-color: transparent #7a6667 transparent transparent !important;
+		content: '';
+		border-style: solid;
+		border-width: 12px 12px 12px 0;
+		height: 0;
+		position: absolute;
+		left: -12px;
+		top: 35px;
+		width: 0;
+		-webkit-transform: rotate(360deg);
+	}
+	.login-form .control-group {
+		margin-bottom: 6px;
+	    position: relative;
+	}
+	.login-form .login-field {
+	    border-color: transparent;
+	    background-color: #f5efee !important;
+	    color: #7a6667 !important;
+	    font-size: 17px;
+	    text-indent: 3px;
+	}
+	.login-form .login-field:focus {
+	    border-color: #7a6667 !important;
+	}
+	.login-form .login-field:focus + .login-field-icon {
+	  color: #7a6667 !important;
+	}
+	.login-form .login-field-icon {
+	  color: #7a6667 !important;
+	  font-size: 16px;
+	  position: absolute;
+	  right: 13px;
+	  top: 9px;
+	  -webkit-transition: 0.25s;
+	  transition: 0.25s;
+	}
+	.login-link {
+	  color: #e2d9d0 !important;
+	  display: block;
+	  font-size: 13px;
+	  margin-top: 15px;
+	  text-align: center;
+	}
+
+
+/*}*/
 
 
 

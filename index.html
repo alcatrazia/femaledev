@@ -14,7 +14,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="css/tipsy.css" rel="stylesheet">
         <link href="css/flat-ui.css" rel="stylesheet">
-        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="images/lily.png">
 
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
         <!--[if lt IE 9]>
@@ -23,12 +23,12 @@
     </head>
 
     <body data-spy="scroll" data-offset="0" data-target="#navs">
-        <div class="navigate" id="gravity">
+        <div class="navigate">
             <ul id="navs">
-                <li><a class="smoothScroll" id="couple" href="#couple" title="Home"><i class="fui-heart"></i></a></li>
-                <li><a class="smoothScroll" id="profile" href="#profile" title="About Us"><i class="fui-heart"></i></a></li>
-                <li><a class="smoothScroll" id="savethedate" href="#savethedate" title="Save The Date"><i class="fui-heart"></i></a></li>
-                <li><a class="smoothScroll" id="rsvp" href="#rsvp" title="R.S.V.P"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" href="#couple" title="Home"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" href="#profile" title="About Us"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" href="#savethedate" title="Save The Date"><i class="fui-heart"></i></a></li>
+                <li><a class="smoothScroll" href="#rsvp" title="R.S.V.P"><i class="fui-heart"></i></a></li>
             </ul>
         </div>
         <div id="couple" class="couple">
@@ -65,6 +65,7 @@
             <h1 class="date-title center">Save The Date</h1>
             <div class="col-md-3 align-right">
                 <h4>When/Where</h4>
+                <img src="images/box.png">
             </div>
             <div class="col-md-3 align-justify">
                 <h6>Wedding Shower</h6>
@@ -88,26 +89,58 @@
             </div>
             <div class="clearfix"></div>
             <div class="col-md-12">
-                <h3 class="title center">We are waiting for you to share our happiness!</h3>
+                <h3 class="title center">We hope to see you at the wedding</h3>
             </div>
         </div>
 
         <div id="rsvp" class="rsvp">
-            <div class="col-md-6 align-right">
-                <h1 class="title">Responds s'il vous plait!</h1>
+            <div class="col-md-4 align-center">
+                <img src="images/envelope.png">
+                <h2 class="title">Responds s'il vous plait!</h2>
+            </div>
+            <div class="col-md-4 align-left login-form">
+                <div class="form-group">
+                    <input type="text" class="form-control login-field" value="" placeholder="Your Name"  />
+                    <label class="login-field-icon fui-user" for="login-name"></label>
+                </div>
+                <div class="form-group">
+                    <select name="herolist" value="4" class="select-block">
+                        <option value="0" selected="selected">Number of Guest</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="herolist" value="4" class="select-block">
+                        <option value="0" selected="selected">You will attend ...</option>
+                        <option value="1">Wedding Shower</option>
+                        <option value="2">Ceremony</option>
+                        <option value="3">Wedding Shower & Ceremony</option>
+                        <option value="4">Wedding Reception</option>
+                        <option value="5">Ceremony & Reception</option>
+                        <option value="6">All Events</option>
+                    </select>
+                </div>
+
+                <a class="btn btn-primary btn-lg btn-block" href="#">I Am Attending</a>
+                <a class="login-link" href="#">Not clear enough? Ask us!</a>
+                  
             </div>
         </div>
 
         <!-- JAVASCRIPT HERE -->
 
-        <script type="text/javascript">
+        <!--<script type="text/javascript">
           $(function() {
             $("#couple").tipsy({gravity: 'w'});
             $("#profile").tipsy({gravity: 'w'});
             $("#savethedate").tipsy({gravity: 'w'});
             $("#rsvp").tipsy({gravity: 'w'});
           });
-        </script>
+        </script>-->
 
 
 
@@ -122,6 +155,7 @@
         <script src="js/flatui-radio.js"></script>
         <script src="js/jquery.tagsinput.js"></script>
         <script src="js/jquery.placeholder.js"></script>
+        <script src="js/application.js"></script>
 
         <script src="js/smoothscroll.js"></script> 
         <script src="js/jquery.tipsy.js"></script> 
