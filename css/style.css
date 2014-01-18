@@ -150,10 +150,71 @@ fieldset[disabled] .btn-inverse.active {
   color: #7a6667 !important;
 }
 
+.dropdown-inverse {
+  background-color: #652241 !important;
+  color: #f5efee !important;
+  padding: 4px 0 6px;
+}
+.dropdown-inverse li {
+  margin: 0 4px -2px;
+}
+.dropdown-inverse li:first-child > a,
+.dropdown-inverse li:last-child > a {
+  border-radius: 2px;
+  padding-bottom: 7px;
+  padding-top: 5px;
+}
+.dropdown-inverse li:first-child dt + a,
+.dropdown-inverse li:last-child dt + a {
+  border-radius: 2px;
+}
+.dropdown-inverse li.active > a,
+.dropdown-inverse li.selected > a {
+  background: #40192e !important;
+  color: #f5efee !important;
+  position: relative;
+  z-index: 1;
+}
+.dropdown-inverse li dt {
+  padding-left: 11px;
+  padding-right: 11px;
+}
+.dropdown-inverse li .divider {
+  margin-left: 11px;
+  margin-right: 11px;
+}
+.dropdown-inverse li > a {
+  border-radius: 2px;
+  color: #f5efee !important;
+  padding: 5px 11px 7px;
+}
+.dropdown-inverse li > a:hover,
+.dropdown-inverse li > a:active,
+.dropdown-inverse li > a:focus {
+  background: #7a6667 !important;
+}
+.dropdown-inverse li > a.highlighted {
+  background: #7a6667 !important;
+  color: #f5efee !important;
+}
+.dropdown-inverse li > a.highlighted:hover,
+.dropdown-inverse li > a.highlighted:focus {
+  background: #7a6667 !important;
+  color: #f5efee !important;
+}
+.dropdown-inverse li .divider {
+  background-color: #40192e !important;
+  border-bottom-color: #1f2035 !important;
+}
+.dropdown-arrow-inverse {
+  border-bottom-color: #652241 !important;
+  border-top-color: #652241 !important;
+}
+
 
 /* ============ WEB STYLE ============== */
 
-/*@media only screen and (min-width: 960px) {*/
+
 	.couple {
 		background: url(../images/1.jpg) #f5efee no-repeat center center !important;
 		-webkit-background-size: cover;
@@ -253,25 +314,6 @@ fieldset[disabled] .btn-inverse.active {
 		margin: 50px;
 		min-height: 600px;
 		height: 100%;
-		/* Internet Explorer 10 */
-		display:-ms-flexbox;
-		-ms-flex-pack:center;
-		-ms-flex-align:center;
-
-		/* Firefox */
-		display:-moz-box;
-		-moz-box-pack:center;
-		-moz-box-align:center;
-
-		/* Safari, Opera, and Chrome */
-		display:-webkit-box;
-		-webkit-box-pack:center;
-		-webkit-box-align:center;
-
-		/* W3C */
-		display:box;
-		box-pack:center;
-		box-align:center;
 	}
 
 	.login-form {background: #7a6667 !important}
@@ -321,8 +363,6 @@ fieldset[disabled] .btn-inverse.active {
 	  text-align: center;
 	}
 
-
-/*}*/
 
 
 
